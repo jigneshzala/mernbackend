@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    {{>header}}
+</head>
+
+<body class="text-center">
+
+    <form action="/register" method="POST" class="form-signin">
+
+        <h1 class="h3 mb-3 font-weight-normal">Register</h1>
+        <label for="inputEmail" class="sr-only">First name</label>
+        <input type="text" class="form-control" placeholder="First name" name="firstname">
+
+        <label for="inputEmail" class="sr-only">Last name</label>
+        <input type="text" class="form-control" placeholder="Last name" name="lastname">
+
+        <label for="inputEmail" class="sr-only">Phone</label>
+        <input type="text" class="form-control" placeholder="Phone" name="phone">
+
+        <label for="inputEmail" class="sr-only">Age</label>
+        <input type="text" class="form-control" placeholder="Age" name="age">
+
+          <div class="d-block my-3">
+          <div class="custom-control custom-radio">
+            <input id="male" name="gender" type="radio" value="male" class="custom-control-input" checked>
+            <label class="custom-control-label" for="male">Male</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input id="female" name="gender" type="radio" value="female" class="custom-control-input">
+            <label class="custom-control-label" for="female">Female</label>
+          </div>
+         
+        </div>
+
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" name="email" class="form-control" placeholder="Email address">
+
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password">
+
+        <label for="inputPassword" class="sr-only">confirm password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="confirmpassword" name="confirmpassword">
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+        
+    </form>
+</body>
+
+</html>
